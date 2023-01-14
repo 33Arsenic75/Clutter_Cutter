@@ -1,14 +1,16 @@
 import os
 import shutil
 
-
-
+path = input("Enter the path of the directory:")
+#Ex: /Users/hg/Desktop also create the directory Unsorted in the src directory.
+n = int(input("Enter the no. of letters for sorted folder names:")
+#Ex: 2 => then if I have file "welcome.txt" then folder name will be "we"
 
 def func2():
-    srcpath = "/Users/hg/Desktop/Unsorted"
+    srcpath = f"{path}/Unsorted"
     srcfiles = os.listdir(srcpath)
 
-    destpath = "/Users/hg/Desktop/Sorted"
+    destpath = f"{path}/Sorted"
 
     destdirs = list(set([filename[0:2] for filename in srcfiles]))
 
@@ -27,7 +29,7 @@ def func2():
 
     for dirname, full_path in targets:
         for filename in srcfiles:
-            if dirname == filename[0:2]:
+            if dirname == filename[0:n]:
                 move(filename, full_path) 
 while True:
     if len(os.listdir("/Users/hg/Desktop/Unsorted")) != 0:
