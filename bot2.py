@@ -10,7 +10,6 @@ def func2():
 
     destpath = "/Users/hg/Desktop/Sorted"
 
-    # extract the ten letters from filenames and filter out duplicates
     destdirs = list(set([filename[0:2] for filename in srcfiles]))
 
     def create(dirname, destpath):
@@ -23,7 +22,7 @@ def func2():
 
     def move(filename, dirpath):
         shutil.move(os.path.join(srcpath, filename),dirpath)
-    # create destination directories and store their names along with full paths
+
     targets = [(folder, create(folder, destpath)) for folder in destdirs]
 
     for dirname, full_path in targets:
