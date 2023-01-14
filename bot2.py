@@ -4,7 +4,7 @@ import shutil
 path = input("Enter the path of the directory:")
 #Ex: /Users/hg/Desktop also create the directory Unsorted in the src directory.
 n = int(input("Enter the no. of letters for sorted folder names:")
-#Ex: 2 => then if I have file "welcome.txt" then folder name will be "we"
+#Ex: 2 => then if I have file "welcome.txt" then folder name will be "we".
 
 def func2():
     srcpath = f"{path}/Unsorted"
