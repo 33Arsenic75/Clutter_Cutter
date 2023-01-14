@@ -12,7 +12,7 @@ def func2():
 
     destpath = f"{path}/Sorted"
 
-    destdirs = list(set([filename[0:2] for filename in srcfiles]))
+    destdirs = list(set([filename[0:n] for filename in srcfiles]))
 
     def create(dirname, destpath):
         full_path = os.path.join(destpath, dirname)
