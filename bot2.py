@@ -10,7 +10,7 @@ def func2():
     srcpath = f"{path}/Unsorted"
     srcfiles = os.listdir(srcpath)
 
-    destpath = f"{path}/Sorted"
+    destpath = f"{path}/Sorted" #editable to users need this is just sorted directory
 
     destdirs = list(set([filename[0:n] for filename in srcfiles]))
 
