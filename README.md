@@ -1,4 +1,19 @@
-# clutter_cutter
-Run the python script in a terminal.
-This program will sort all the files in a folder based upon its file name. For example files having similar file name like MTL1 and MTL2 will be sorted into same folder. The idea of similar names depends upon an integer input. Like if we take the integer input as 3, Then the files having first 3 characters same will be sorted into the same folder. We also take another input as on which folder to apply this function. For example, if we apply this bot on a folder name "Semester1". So we need to provide the folder address (path) as another input. This bot constantly runs and sorts the files added in the folder into another folder. The method of adding a file in this folder is to "move" the file to the above folder. If we "copy" and "paste" the file, the bot will show a promt but will still sort the file properly and continue running. This program will help in sorting large number of file which would otherwise be a nightmare.
-These sorted files and directories will go in a folder named "Sorted", to change the name of this or give your own folder/path , edit the destpath variable. 
+#Clutter Cutter: Python File Sorting Script
+
+Clutter Cutter is a versatile Python script designed to bring order to your file organization. This script takes advantage of Python's file handling capabilities to automatically sort files based on their names into respective directories. 
+
+Key Features:
+- Customizable sorting rules: Users can define their own rules for sorting files, including specific keywords or patterns in the file names.
+- Recursive file search: The script can search for files in subdirectories, providing comprehensive file sorting across an entire directory tree.
+- Configurable destination directories: Clutter Cutter allows users to define destination directories for each category, enabling flexible customization based on their specific organizational needs.
+
+Usage:
+1. Configure the script: Set the source directory and define sorting rules in the configuration file.
+2. Run the script: Execute the Clutter Cutter script, and it will automatically sort the files in the source directory according to the specified rules.
+
+Dependencies:
+- Python 3.1
+
+Note: Clutter Cutter is an open-source project. Contributions and feedback are greatly appreciated. Feel free to fork the repository, submit issues, or make pull requests to enhance its functionality and usability.
+
+Disclaimer: Clutter Cutter is provided as-is without any warranty. Use it at your own risk.
